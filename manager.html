@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,46 +7,96 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style2.css">
     <title>الادارات</title>
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+<meta charset=”UTF-8″>
+
+<meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
+
 </head>
 <body>
 
-    <header>
-        <a href="" class="logo"><img src="images/2.jpg"  style="width:100px;height:100px;"></a>
-        <a href="call us.html">تواصل معنا</a>
-
-        <a href="a">فروعنا</a>
-        
-         <a href="a">المعرض</a>
-        
-         <a href="index10.html">اوراق العمل</a>
-        
-        <a href="index3.html">الكتب الدراسيه</a>
-        
-        <a href="a">المعلمين</a>
-        
-         <a href="a">الادارات المتخصصه</a>
-        
-         <a href="a">الادارات العامه</a>
-        
-         <a href="index10.html">المراحل التعليميه</a>
-        
-        <a href="من نحن.html">من نحن</a>
-        
-        <a href="main.html">الرئيسيه</a>
-        <a href="" class="logo"><img src="images/2.jpg"  style="width:100px;height:100px;"></a>
-    </header>
-
-
-    <br>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+              <a class="navbar-brand" href="javascript:void(0)"><img src="images/2.jpg"  style="width:100px;height:100px;"></a></a>
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="main.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">فروعنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="level.html"> المراحل الدراسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="teacher.html">الأصطاف</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">الأراء</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">الاوراق التعليمية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">الكتب</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)"> الأستديو</a>
+              </li>
+              
+  
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="manager.html" role="button" data-bs-toggle="dropdown">الأدارات</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">التوظيف</a></li>
+                  <li><a class="dropdown-item" href="#"> الحسابات</a></li>
+                  <li><a class="dropdown-item" href="#">النشر الإلكتروني</a></li>
+                  <li><a class="dropdown-item" href="#">الاعلام</a></li>
+                  <li><a class="dropdown-item" href="#">التراحيل</a></li>
+                  <li><a class="dropdown-item" href="#"> القياس والتقويم</a></li>
+                  <li><a class="dropdown-item" href="#">التدريب</a></li>
+                  <li><a class="dropdown-item" href="#">الخدمات</a></li>
+                  <li><a class="dropdown-item" href="#">النشاطات</a></li>
+                </ul>
+              </li>
+              
+              
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">اتصل بنا</a>
+              </li>
+            </ul>
+  
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="بحث">
+              <button class="btn btn-primary" type="button">بحث</button>
+            </form>
+  
+           
+          </div>
+        </div>
+      </nav>
+  
+  
     <section class="cards" id="services">
-        <h1 class="title">الأدارات</h1>
+         <div class="p-3 bg-info text-white text-center ">
+            <h2 class="heading">
+        
+          الأدارات
+            </h2>
+        </div>
+        <div class="row mt-5">
         <div class="content">
             <div class="card">
                 <div class="icon">
                     <img src="images/OIP.jpeg"  style="width:300px;height:300px;">
                 </div>
                 <div class="info">
-                    <h1>التوظيف</h1>
+                    <h2>التوظيف</h2>
                     <button class ="cta dark"> أذهب الأن</button> 
                 </div>
             </div>
@@ -55,7 +105,7 @@
                     <img src="images/R.jpeg"  style="width:300px;height:300px;">
                 </div>
                 <div class="info">
-                    <h1>الحسابات</h1>
+                    <h2>الحسابات</h2>
                     <button class ="cta dark"> أذهب الأن</button> 
                 </div>
             </div>
@@ -64,7 +114,7 @@
                     <img src="images/000.jpeg"  style="width:300px;height:300px;">
                 </div>
                 <div class="info">
-                    <h1>النشر الالكتروني</h1>
+                    <h2>النشر الالكتروني</h2>
                     <button class ="cta dark"> أذهب الأن</button>
                 </div>
             </div>
@@ -74,7 +124,7 @@
                     <img src="images/777.jpeg"  style="width:300px;height:300px;">
                 </div>
                 <div class="info">
-                    <h1>القياس والتقويم </h1>
+                    <h2>القياس والتقويم </h2>
                     <button class ="cta dark"> أذهب الأن</button> 
                 </div>
             </div>
@@ -84,7 +134,7 @@
                     <img src="images/888.jpeg"  style="width:300px;height:300px;">
                 </div>
                 <div class="info">
-                    <h1>الخدمات</h1>
+                    <h2>الخدمات</h2>
                     <button class ="cta dark"> أذهب الأن</button> 
                 </div>
             </div>
@@ -94,7 +144,7 @@
                     <img src="images/mm.jpeg"  style="width:300px;height:300px;">
                 </div>
                 <div class="info">
-                    <h1>الاعلام</h1>
+                    <h2>الاعلام</h2>
                     <button class ="cta dark"> أذهب الأن</button> 
                 </div>
             </div>

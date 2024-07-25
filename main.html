@@ -1,45 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مؤسسة د/أبازر الكودة التعليمية</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div id="menu-bar" class="fas fa-bars" onclick="showmenu()"></div>
-        <a href="" class="logo"><img src="images/2.jpg"  style="width:100px;height:100px;"></a>
-        <nav class="navbar">
-            <a href="#home">الرئيسية</a>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
            
-            <a href="#book">الكتب</a>
-            
-            <a href="#packages">فروعنا</a>
-            <a href="#services">النشاطات</a>
-            <a href="#gallary">الأستديو</a>
-            <a href="teacher.html">الأصطاف</a>
-            <a href="#review">الأراء</a>
-            
-            <a href="level.html">المراحل الدراسية</a>
-            <a href="manager.html">الأدارات</a>
-            <a href="#contact">اتصل بنا</a>
-        </nav>
-        <div class="icon">
-            <i class="fas fa-search" onclick="showbar()" id="search-btn"></i>
-            <i class="fas fa-user" onclick="showform()"></i>
-        </div>
-        <form action="" class="search-form">
-            <input type="search" id="search-bar" placeholder="عن ماذا تبحث...">
-            <label for="search-bar" class="fas fa-search"></label>
-        </form>
-         <a href="" class="logo"><img src="images/2.jpg"  style="width:100px;height:100px;"></a>
-    </header>
+            <a class="navbar-brand" href="javascript:void(0)"><img src="images/2.jpg"  style="width:100px;height:100px;"></a></a>
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">فروعنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="level.html"> المراحل الدراسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="teacher.html">الأصطاف</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">الأراء</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">الاوراق التعليمية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">الكتب</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)"> الأستديو</a>
+              </li>
+              
 
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">الأدارات</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">التوظيف</a></li>
+                  <li><a class="dropdown-item" href="#"> الحسابات</a></li>
+                  <li><a class="dropdown-item" href="#">النشر الإلكتروني</a></li>
+                  <li><a class="dropdown-item" href="#">الاعلام</a></li>
+                  <li><a class="dropdown-item" href="#">التراحيل</a></li>
+                  <li><a class="dropdown-item" href="#"> القياس والتقويم</a></li>
+                  <li><a class="dropdown-item" href="#">التدريب</a></li>
+                  <li><a class="dropdown-item" href="#">الخدمات</a></li>
+                  <li><a class="dropdown-item" href="#">النشاطات</a></li>
+                </ul>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">اتصل بنا</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="بحث">
+                <button class="btn btn-primary" type="button">بحث</button>
+              </form>
+           
+          </div>
+        </div>
+      </nav>
+
+
+      
     <div class="login-form">
        
         <i class="fas fa-times" id="form-close" onclick="hideform()"></i>
@@ -51,7 +89,7 @@
             <input type="checkbox" id="remember">
             <label for="remmember"> تزكرني</label>
             <p>هل نسيت كلمة السر? <a href=""> اضغط هنا</a></p>
-            <p>ليس لدي حساب? <a href=""> تسجيل جديد</a></p>
+            <p>ليس لدي حساب? <a href="logup.html"> تسجيل جديد</a></p>
         </form>
     </div>
     <!-------------------------------------------------------------------------------->
@@ -61,7 +99,7 @@
         <div class="content">
             <h3>مؤسسة د/أبازر الكودة التعليمية</h3>
             <p>نبذة تعريفية عن المؤسسة</p>
-            <a href="#" class="btn">اكتشف أكثر</a>
+          
         </div>
 
         <div class="controls">
@@ -78,30 +116,50 @@
     <!------------------------------------------------------------------------------------>
     <!------------------------------------------------------------------------------------>
 
-    <section class="book" id="book">
-        <h1 class="heading">
-            
-            <span>نبذة</span>
-            &nbsp;
-            &nbsp;
-            <span>عن</span>
-            &nbsp;
-            &nbsp;
-            <span>المؤسسة</span>
-        </h1>
+    <section class="book mt-5 pb-5" id="book">
+        <div class="container">
+            <div class="p-3 bg-info text-white text-center ">
+                    <h2 class="heading">
+                
+                    نبذة
+                        &nbsp;
+                        &nbsp;
+                    عن
+                        &nbsp;
+                        &nbsp;
+                        المؤسسة
+                    </h2>
+                </div>
+                
+                <div class="row mt-5">
 
         <div class="row">
-            <div class="image">
-                <img src="images/90.jpg" alt="" style="width:500px;height:500px;">
+            
+            <div class="col-md-6 col-sm-12">
+                <div class="image"> 
+                    <img src="images/90.jpg" class="rounded" alt="" style="width:500px;height:500px;">
+                </div>
             </div>
+
             <form action="">
-                <h1>مرحبا بك في مؤسسة اباذر الكوده التعليمية</h1>
-                <h1>
-                 في مؤسسة اباذر الكوده مهمتنا واضحة وهي تمكين عقول الجيل القادم من خلال التعليم المتميز,
-                 نحن مدرسه مكرسة لتنميه قاده ومبتكرين ,وتزويدهم بئية تعليمية حازمة ,نسعي جاهدين لتحدي طلابنا للوصول الي اقصي امكاناتهم ,من خلال منهج شامل ومنهجيات تدريس متطورة.
-                  نزود طلابنا بالمعرفة والمهارات والثقة للتنقل في عالم دائم التغير.
-                  </h1>
+                <div class="col-md-6 col-sm-12 text-center">
+                    <h2 >مرحبا بك في مؤسسة اباذر الكوده التعليمية</h2>
+                    <div class="card">  
+                        
+                        <div class="card-body">
+                            
+                            <p class="lead">
+                            في مؤسسة اباذر الكوده مهمتنا واضحة وهي تمكين عقول الجيل القادم من خلال التعليم المتميز,
+                            نحن مدرسه مكرسة لتنميه قاده ومبتكرين ,وتزويدهم بئية تعليمية حازمة ,نسعي جاهدين لتحدي طلابنا للوصول الي اقصي امكاناتهم ,من خلال منهج شامل ومنهجيات تدريس متطورة.
+                            نزود طلابنا بالمعرفة والمهارات والثقة للتنقل في عالم دائم التغير.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+
             </form>
+           
         </div>
     </section>
     <!------------------------------------------------------------------------------------>
@@ -109,145 +167,132 @@
 
     <section class="packages" id="packages">
 
-        <h1 class="heading">
-            
-            <span>الــفــروع</span>
-        </h1>
+            <div class="p-3 bg-info text-white text-center ">
+                    <h2 class="heading">
+                
+                    الــفــروع
+                    </h2>
+                </div>
+                
+                <div class="row mt-5">
 
+                  <!-- barnch  -->
+     <section class="text-center">
         <div class="container">
-            <div class="box">
-                <img src="images/p-1.jpg" alt="">
-                <div class="content">
-                    <h3><i class="fas fa-map-marker-alt"></i> القاهرة</h3>
-                    <p>العمرانية!</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <a href="#" class="btn">اعرف أكثر</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/p-2.jpg" alt="">
-                <div class="content">
-                    <h3><i class="fas fa-map-marker-alt"></i>القاهرة</h3>
-                    <p>الليبيني!</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <a href="#" class="btn">أعرف أكثر</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/p-3.jpg" alt="">
-                <div class="content">
-                    <h3><i class="fas fa-map-marker-alt"></i> القاهره</h3>
-                    <p>اسكندرية!</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <a href="#" class="btn">أعرف أكثر</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/p-4.jpg" alt="">
-                <div class="content">
-                    <h3><i class="fas fa-map-marker-alt"></i> اسكندرية</h3>
-                    <p>العجمي!</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <a href="#" class="btn">أعرف أكثر</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/p-5.jpg" alt="">
-                <div class="content">
-                    <h3><i class="fas fa-map-marker-alt"></i> اسكندرية</h3>
-                    <p>ميامي!</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <a href="#" class="btn">أعرف أكثر</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/p-6.jpg" alt="">
-                <div class="content">
-                    <h3><i class="fas fa-map-marker-alt"></i> السعودية</h3>
-                    <p>جدة!</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <a href="#" class="btn">أعرف أكثر</a>
-                </div>
-            </div>
-        </div>
-    </section>
+           
+              
+            <div class="branches text-center">
+                <div class="row">
 
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/p-6.jpg" alt="" class="card-img-top" width="400px"  height="400px"   srcset="">
+                            </div>
+                            <div class="card-body">
+                                <h3>القاهرة</h3>
+                                <p class="lead">
+                                    العمرانية
+                                </p>
+                                <div class="rating"></div>
+                                <div class="btn btn-info">اعرف اكثر</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/p-4.jpg" alt="" class="card-img-top" width="400px"  height="400px" srcset="">
+                            </div>
+                            <div class="card-body">
+                                <h3>القاهرة</h3>
+                                <p class="lead">
+                                    الليبيني
+                                </p>
+                                <div class="rating"></div>
+                                <div class="btn btn-info">اعرف اكثر</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/p-5.jpg" alt="" class="card-img-top" width="400px"  height="400px"   srcset="">
+                            </div>
+                            <div class="card-body">
+                                <h3>الإسكندرية</h3>
+                                <p class="lead">
+                                    ميامي
+                                </p>
+                                <div class="rating"></div>
+                                <div class="btn btn-info">اعرف اكثر</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+           </div>
+        </div>
+     </section>
+
+     <div class="row mt-5"></div>
+   
+
+  <!------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------>
+
+       
     <!------------------------------------------------------------------------------------>
     <!------------------------------------------------------------------------------------>
 
     <section class="services" id="services">
 
-        <h1 class="heading">
-            
-            <span>الــنشـاطـات</span>
-        </h1>
+        <div class="p-3 bg-info text-white text-center ">
+            <h2 class="heading">
+        
+           النشاطات
+            </h2>
+        </div>
+        
+        <div class="row mt-5">
 
         <div class="container">
             <div class="box">
                 <img src="./images/99.jpg" style="width:300px;height:300px;" />
                 <h3>السباحة</h3>
-                <p> </p>
+                <div class="btn btn-info">اعرف اكثر</div>
             </div>
             <div class="box">
                 <img src="./images/22.jpg" style="width:300px;height:300px;" />
                 <h3>ركوب الخيل</h3>
-                <p></p>
+                <div class="btn btn-info">اعرف اكثر</div>
             </div>
             <div class="box">
                 <img src="./images/77.jpg" style="width:300px;height:300px;" />
                 <h3>كرة اليد</h3>
-                <p></p>
+                <div class="btn btn-info">اعرف اكثر</div>
             </div>
             <div class="box">
                 <img src="./images/999.jpg" style="width:300px;height:300px;" />
                 <h3>كرة التنس</h3>
-                <p></p>
+                <div class="btn btn-info">اعرف اكثر</div>
             </div>
             <div class="box">
                 <img src="./images/444.jpg" style="width:300px;height:300px;" />
                 <h3>كرة الطاولة</h3>
-                <p></p>
+                <div class="btn btn-info">اعرف اكثر</div>
             </div>
             <div class="box">
                 <img src="./images/55.jpg" style="width:300px;height:300px;" />
                 <h3>كرة القدم</h3>
-                <p></p>
+                <div class="btn btn-info">اعرف اكثر</div>
             </div>
         </div>
     </section>
@@ -257,10 +302,14 @@
 
     <section class="gallary" id="gallary">
 
-        <h1 class="heading">
-           
-            <span>الأســتــديــو</span>
-        </h1>
+        <div class="p-3 bg-info text-white text-center ">
+            <h2 class="heading">
+        
+            الأستديو
+            </h2>
+        </div>
+        
+        <div class="row mt-5">
 
         <div class="container">
             <div class="box">
@@ -268,7 +317,7 @@
                 <div class="content">
                     <h3>صور تزكارية</h3>
                     <p>صور داخل المؤسسة</p>
-                    <a href="" class="btn">تصفح المزيد</a>
+                    <div class="btn btn-primary">اعرف اكثر</div>
                 </div>
             </div>
             <div class="box">
@@ -276,7 +325,7 @@
                 <div class="content">
                     <h3>صور تزكارية</h3>
                     <p>صور داخل المؤسسة</p>
-                    <a href="" class="btn">تصفح المزيد</a>
+                    <div class="btn btn-primary">اعرف اكثر</div>
                 </div>
             </div>
             <div class="box">
@@ -284,7 +333,7 @@
                 <div class="content">
                     <h3>صور تزكارية</h3>
                     <p>صور داخل المؤسسة</p>
-                    <a href="" class="btn">تصفح المزيد</a>
+                    <div class="btn btn-primary">اعرف اكثر</div>
                 </div>
             </div>
             <div class="box">
@@ -292,7 +341,7 @@
                 <div class="content">
                     <h3>صور تزكارية</h3>
                     <p>صور داخل المؤسسة</p>
-                    <a href="" class="btn">تصفح المزيد</a>
+                    <div class="btn btn-primary">اعرف اكثر</div>
                 </div>
             </div>
             <div class="box">
@@ -300,7 +349,7 @@
                 <div class="content">
                     <h3>صور تزكارية</h3>
                     <p>صور داخل المؤسسة</p>
-                    <a href="" class="btn">تصفح المزيد</a>
+                    <div class="btn btn-primary">اعرف اكثر</div>
                 </div>
             </div>
             <div class="box">
@@ -308,7 +357,7 @@
                 <div class="content">
                     <h3>صور تزكارية</h3>
                     <p>صور داخل المؤسسة</p>
-                    <a href="" class="btn">تصفح المزيد</a>
+                    <div class="btn btn-primary">اعرف اكثر</div>
                 </div>
             </div>
             <div class="box">
@@ -316,7 +365,7 @@
                 <div class="content">
                     <h3>صور تزكارية</h3>
                     <p>صور داخل المؤسسة</p>
-                    <a href="" class="btn">تصفح المزيد</a>
+                    <div class="btn btn-primary">اعرف اكثر</div>
                 </div>
             </div>
             <div class="box">
@@ -324,7 +373,7 @@
                 <div class="content">
                     <h3>صور تزكارية</h3>
                     <p>صور داخل المؤسسة</p>
-                    <a href="" class="btn">تصفح المزيد</a>
+                    <div class="btn btn-primary">اعرف اكثر</div>
                 </div>
             </div>
             <div class="box">
@@ -332,11 +381,11 @@
                 <div class="content">
                     <h3>صور تزكارية</h3>
                     <p>صور داخل المؤسسة</p>
-                    <a href="" class="btn">تصفح المزيد</a>
+                    <div class="btn btn-primary">اعرف اكثر</div>
                 </div>
             </div>
         </div>
-
+        <div class="btn btn-info - p-3 -text-white text-center">اعرف اكثر</div>
     </section>
 
     <!----------------------------------------------------------------------------------------->
@@ -344,10 +393,14 @@
     
     <section class="review" id="review">
 
-        <h1 class="heading">
-            
-            <span>تـقـيـم الأراء</span>
-        </h1>
+        <div class="p-3 bg-info text-white text-center ">
+            <h2 class="heading">
+        
+            تقييم الأراء
+            </h2>
+        </div>
+        
+        <div class="row mt-5">
 
         <div class="swiper review-slider">
             <div class="swiper-wrapper">
@@ -417,66 +470,56 @@
 
     <section class="contact" id="contact">
 
-        <h1 class="heading">
-           
-            <span>تـواصـل مـعـنـا</span>
-        </h1>
+        <div class="p-3 bg-info text-white text-center ">
+            <h2 class="heading">
+        
+            تواصل معنا
+            </h2>
+        </div>
+        
+        <div class="row mt-5" alin=center>
 
         <div class="row">
-            <div class="image">
-                <img src="images/2.jpg"  style="width:500px;height:500px;"> >
+           
+            <div class="col-md-6">
+                <div class="mb-3 mt-3 text-left">
+                    <label for="email" class="form-label">البريد الإلكتروني:</label>
+                    <input type="email" class="form-control" id="email" placeholder="اكتب البريد" name="email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="pwd" class="form-label">كلمة السر:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="اكتب السر" name="pswd">
+                  </div>
+                  <div class="form-check mb-3">
+                    <label class="form-check-label">
+                    </label>
+                  </div>
+                  <div class="mb-3">
+                    <label for="comment">الرسالة:</label>
+                    <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+
+                  </div>
+                  <button type="submit" class="btn btn-info">ارسال الرسالة</button>
             </div>
-            <form action="">
-                <div class="inputbox">
-                    <input type="email" placeholder="الايميل">
-                    <input type="text" placeholder="الاسم">
-                </div>
-                <div class="inputbox">
-                    <input type="number" placeholder="رقم التلفون">
-                    <input type="text" placeholder="العنوان">
-                </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="الرسالة"></textarea>
-                <input type="submit" class="btn" value="ارسال الرسالة ">
-            </form>
+
+            <div class="image">
+                <img src="images/2.jpg"  style="width:400px;height:400px;"> >
+            </div>
         </div>
     </section>
   
     <!------------------------------------------------------------------------------------------->
     <!------------------------------------------------------------------------------------------->
 
-    <section class="footer">
-        <div class="box-container">
-            <div class="box">
-                <h3>about us</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis temporibus quas quasi facere id, aspernatur rem obcaecati maiores inventore expedita.</p>
-            </div>
-            <div class="box">
-                <h3>barnch</h3>
-                <a href="#">egypt</a>
-                <a href="#">london</a>
-                <a href="#">korea</a>
-                <a href="#">japan</a>
-            </div>
-            <div class="box">
-                <h3>quick links</h3>
-                <a href="#">home</a>
-                <a href="#">book</a>
-                <a href="#">packages</a>
-                <a href="#">services</a>
-                <a href="#">gallary</a>
-                <a href="#">review</a>
-                <a href="#">contact</a>
-            </div>
-            <div class="box">
-                <h3>follow us</h3>
-                <a href="#">facebook</a>
-                <a href="#">instagram</a>
-                <a href="#">twitter</a>
-                <a href="#">linkedin</a>
-            </div>
+
+       
+        <div class="p-3 bg-info text-white text-center ">
+            <h2 class="heading">
+        
+       مؤسسة د. أبازر الكودة التعليمية
+            </h2>
         </div>
-        <h1 class="created">مؤسسة د/أبازر الكودة التعليمية</h1>
-    </section>
+
 
 
 
